@@ -1,4 +1,4 @@
 #pragma once
 using namespace std;
 
-void mainLogick(string inputData);
+void mainLogick(string inputData,bool startFromFunction = 0);
