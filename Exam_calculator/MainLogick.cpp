@@ -10,9 +10,6 @@ void mainLogick(string inputData,bool startFromFunction) {
 	string copyInputData;
 	for (int i = 0; i < inputData.length(); i++) {
 		if (startFromFunction == true) {
-			if (i == 0||i==inputData.length()-1) {
-				continue;
-			}
 			if (inputData[i] == '(' || countOpenBracket > 0) {
 				if (inputData[i] == '(') {
 					countOpenBracket++;
@@ -42,5 +39,4 @@ void mainLogick(string inputData,bool startFromFunction) {
 	if (countOpenBracket > 1) {
 		mainLogick(copyInputData, 1);
 	}
-	cout << copyInputData << endl;
 }
